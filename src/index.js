@@ -52,13 +52,15 @@ function reduxifyNavigator() {
   );
 }
 
+let navigationService = NavigationService;
+    
 export * from './types';
 export {
   // Current
   createReactNavigationReduxMiddleware,
   createNavigationReducer,
   createReduxContainer,
-  let navigationService = NavigationService,
+  navigationService,
   // Deprecated
   reduxifyNavigator,
   initializeListeners,
