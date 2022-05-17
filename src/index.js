@@ -5,6 +5,7 @@ import invariant from 'invariant';
 import { createReactNavigationReduxMiddleware } from './middleware';
 import { createReduxContainer } from './create-redux-container';
 import { createNavigationReducer } from './reducer';
+import NavigationService from './NavigationService';
 
 function initializeListeners() {
   invariant(
@@ -57,6 +58,7 @@ export {
   createReactNavigationReduxMiddleware,
   createNavigationReducer,
   createReduxContainer,
+  NavigationService,
   // Deprecated
   reduxifyNavigator,
   initializeListeners,
