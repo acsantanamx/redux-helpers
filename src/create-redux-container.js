@@ -18,6 +18,8 @@ import {
   createNavigationPropConstructor,
 } from './middleware';
 
+import NavigationService from './NavigationService';
+
 type RequiredProps<State: NavigationState> = {
   state: State,
   dispatch: NavigationDispatch,
@@ -54,6 +56,7 @@ function createReduxContainer<
 
     componentDidMount() {
       initializeListeners(key, this.props.state);
+      NavigationService.setTopLevelNavigator(this);
     }
 
     componentDidUpdate() {
