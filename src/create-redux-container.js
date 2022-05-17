@@ -101,13 +101,13 @@ function createReduxContainer<
 
   }
 
-  return NavigatorReduxWrapper;
+  //return NavigatorReduxWrapper;
 
-  /*
+  //*
   return React.forwardRef((props, ref) => {    
     return <NavigatorReduxWrapper ref={ref} {...props} />;  
   });
-  */
+  //*/
 }
 
 export {
