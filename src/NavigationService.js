@@ -2,9 +2,9 @@ import { NavigationActions } from 'react-navigation';
 
 let _navigator;
 
-function setTopLevelNavigator(navigatorRef) {
-  console.log('setTopLevelNavigator', _navigator);  
-  _navigator = navigatorRef;
+function setTopLevelNavigator(navigator) {
+  console.log('setTopLevelNavigator', navigator);  
+  _navigator = navigator;
 }
 
 function navigate(routeName, params) {
