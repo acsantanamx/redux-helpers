@@ -58,7 +58,7 @@ export {
   createReactNavigationReduxMiddleware,
   createNavigationReducer,
   createReduxContainer,
-  NavigationService,
+  let navigationService = NavigationService,
   // Deprecated
   reduxifyNavigator,
   initializeListeners,
