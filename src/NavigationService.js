@@ -1,16 +1,16 @@
 import { NavigationActions } from 'react-navigation';
 
-let _dispatch;
+let _navigator;
 
-function setTopLevelNavigator(dispatch) {
-  console.log('setTopLevelNavigator', dispatch);  
-  _dispatch = dispatch;
+function setTopLevelNavigator(navigator) {
+  console.log('setTopLevelNavigator', navigator);  
+  _navigator = navigator;
 }
 
 function navigate(routeName, params) {
-  console.log('_dispatch', _dispatch);
+  console.log('_navigator', _navigator);
     
-  _dispatch(
+  _navigator.dispatch(
     NavigationActions.navigate({
       routeName,
       params
