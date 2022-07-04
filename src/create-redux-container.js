@@ -56,7 +56,7 @@ function createReduxContainer<
 
     componentDidMount() {
       initializeListeners(key, this.props.state);
-      NavigationService.setTopLevelNavigator(this.props.dispatch);
+      NavigationService.setTopLevelNavigator(this);
     }
 
     componentDidUpdate() {
