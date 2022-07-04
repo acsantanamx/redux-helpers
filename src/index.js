@@ -53,7 +53,7 @@ function reduxifyNavigator() {
 }
 
 let navigationService = NavigationService;
-    
+
 export * from './types';
 export {
   // Current
