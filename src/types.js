@@ -7,3 +7,4 @@ import type {
 
 export type Navigator = NavigationContainer<*, *, *>;
 export type ReducerState = ?NavigationState;
+
