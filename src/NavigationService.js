@@ -18,7 +18,12 @@ function navigate(routeName, params) {
   );
 }
 
+function getNavigator() {
+  return _navigator; 
+}
+
 export default {
   navigate,
-  setTopLevelNavigator
+  setTopLevelNavigator,
+  getNavigator
 };
